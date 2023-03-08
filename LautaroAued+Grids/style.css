@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    min-height: 120vh;
+    display: grid;
+    grid-gap: 30px;
+    background-color:white;
+    grid-template-areas:
+        " header "
+        " nav     "
+        "nosotros"
+        "imagen"
+        "pilares"
+        "opiniones"
+        "footer";
+    grid-template-rows: 50px 50px 220px 400px 220px 140px;
+
+}
+
+/* INICIO HEADER */
+header {
+    background-color: rgb(255, 0, 43);
+    grid-area: header;
+    display: inline-flex;
+    background-color: rgb(163, 214, 243);
+    align-items: center;
+    width: 100%;
+
+}
+
+.titulo {
+    display: inline-flex;
+    background-color: rgb(163, 214, 243);
+    align-items: center;
+    width: 100%;
+}
+
+.imagenDeMarca {
+
+    width: 5%;
+    margin-right: 200px;
+    margin-left: 10px;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: rgb(163, 214, 243)
+}
+
+/*  FIN HEADER */
+
+/*  INICIO NAV */
+nav { 
+
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+background-color: rgb(163, 214, 243);
+
+}
+
+.barraNavegacion {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+ul {
+    border: solid 0px black;
+    justify-content: space-around;
+    display: flex;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(163, 214, 243);
+
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+/*  FIN NAV */
+
+/*  INICIO SECCION QUIENES SOMOS*/
+
+
+#nosotros {
+
+    background-color: chartreuse;
+    grid-area: nosotros;
+}
+
+#contenidoQuienesSomos { 
+
+    margin-top: 15px;
+
+}
+
+/*  FIN SECCION QUIENES SOMOS */
+
+/*  INICIO IMAGEN HOME */
+
+.fotoHome {
+
+    background-color: rgb(0, 8, 255);
+    grid-area: imagen;
+    width: 100%;
+    
+    }
+
+
+#pilares {
+
+    background-color: rgb(255, 0, 170);
+    grid-area: pilares;
+}
+
+#opiniones {
+
+    background-color: rgb(0, 68, 255);
+    grid-area: opiniones;
+}
+
+footer {
+
+    background-color: rgb(255, 208, 0);
+    grid-area: footer;
+    grid-gap: 15px
+}
+
+#pie {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+    column-gap: 10px;
+}
+
+#col1 {
+
+    background-color: rgb(215, 59, 158);
+    padding-block: 5px;
+}
+
+
+#col2 {
+
+    background-color: rgb(36, 176, 61);
+    padding-block: 5px;
+}
+
+#col3 {
+
+    background-color: rgb(83, 36, 176);
+    padding-block: 5px;
+}
